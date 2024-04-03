@@ -1,0 +1,772 @@
+
+phuon@Phuonghard MINGW64 ~
+$ cd downloads
+
+phuon@Phuonghard MINGW64 ~/downloads
+$ cd AIO-WARNUP
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP
+$ cd A
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A
+$ git clone git@github.com:phuonghard/lab1.3.git
+Cloning into 'lab1.3'...
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A
+$ ls
+Lab0.1/  Lab0.2/  Lab0.2.ipynb  Lab1.1/  Lab1.2/  My_Notebook.ipynb
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A
+$ git clone https://github.com/phuonghard/lab1.3.git
+Cloning into 'lab1.3'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A
+$ ls
+Lab0.1/  Lab0.2/  Lab0.2.ipynb  Lab1.1/  Lab1.2/  My_Notebook.ipynb  l
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A
+$ git clone https://github.com/phuonghard/Bai-_tap.git
+Cloning into 'Bai-_tap'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A
+$ ls
+Bai-_tap/  Lab0.2/       Lab1.1/  My_Notebook.ipynb
+Lab0.1/    Lab0.2.ipynb  Lab1.2/  lab1.3/
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A
+$ cd Bai-_tap
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Bai-_tap (main)
+$ ls
+README.md
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Bai-_tap (main)
+$ ls -a
+./  ../  .git/  README.md
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Bai-_tap (main)
+$ git branch -a
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Bai-_tap (main)
+$ git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Bai-_tap (main)
+$ git add .
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Bai-_tap (main)
+$ git add status
+fatal: pathspec 'status' did not match any files
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Bai-_tap (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Module 1/
+
+nothing added to commit but untracked files present (use "git add" to
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Bai-_tap (main)
+$ git add status
+fatal: pathspec 'status' did not match any files
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Bai-_tap (main)
+$ git add .
+warning: in the working copy of 'Module 1/buoi1/.ipynb_checkpoints/Laboint.ipynb', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Module 1/buoi1/.ipynb_checkpoints/My_heckpoint.ipynb', LF will be replaced by CRLF the next time Git touche
+warning: in the working copy of 'Module 1/buoi1/Lab0.1/My_Notebook.ipyll be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Module 1/buoi1/Lab0.2.ipynb', LF willed by CRLF the next time Git touches it
+warning: in the working copy of 'Module 1/buoi1/Lab0.2/Lab0.2.ipynb',  replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Module 1/buoi1/My_Notebook.ipynb', LFeplaced by CRLF the next time Git touches it
+warning: adding embedded git repository: Module 1/buoi1/lab1.3
+hint: You've added another git repository inside your current reposito
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> Module 1/buoi1/lab1.3
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached Module 1/buoi1/lab1.3
+hint:
+hint: See "git help submodule" for more information.
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Bai-_tap (main)
+$ git add status
+fatal: pathspec 'status' did not match any files
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Bai-_tap (main)
+$ git add .
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Bai-_tap (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Module 1/buoi1/.ipynb_checkpoints/Lab0.2-checkpoin
+        new file:   Module 1/buoi1/.ipynb_checkpoints/My_Notebook-checnb
+        new file:   Module 1/buoi1/Lab0.1/My_Notebook.ipynb
+        new file:   Module 1/buoi1/Lab0.2.ipynb
+        new file:   Module 1/buoi1/Lab0.2/Lab0.2.ipynb
+        new file:   Module 1/buoi1/Lab1.1/Screenshot 2024-04-03 210034
+        new file:   Module 1/buoi1/Lab1.2/Screenshot 2024-04-03 210855
+        new file:   Module 1/buoi1/Lab1.2/Screenshot 2024-04-03 212042
+        new file:   Module 1/buoi1/My_Notebook.ipynb
+        new file:   Module 1/buoi1/lab1.3
+
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Bai-_tap (main)
+$ git commit -m "Phuong nop bai tap buoi 1"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'phuon@Phuonghard.(non
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Bai-_tap (main)
+$ git commit -m "hehe"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'phuon@Phuonghard.(non
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Bai-_tap (main)
+$ git commit -m
+error: switch `m' requires a value
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Bai-_tap (main)
+$ git commit -m "ngon"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'phuon@Phuonghard.(non
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Bai-_tap (main)
+$ Omit --global
+bash: Omit: command not found
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Bai-_tap (main)
+$ git config --global user.email "phuonghard@gmail.com"
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Bai-_tap (main)
+$ git config --global user.name "phuonghard"
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Bai-_tap (main)
+$ Omit --global
+bash: Omit: command not found
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Bai-_tap (main)
+$ git commit -m "hehe"
+[main 9cda08d] hehe
+ 10 files changed, 621 insertions(+)
+ create mode 100644 Module 1/buoi1/.ipynb_checkpoints/Lab0.2-checkpoin
+ create mode 100644 Module 1/buoi1/.ipynb_checkpoints/My_Notebook-checnb
+ create mode 100644 Module 1/buoi1/Lab0.1/My_Notebook.ipynb
+ create mode 100644 Module 1/buoi1/Lab0.2.ipynb
+ create mode 100644 Module 1/buoi1/Lab0.2/Lab0.2.ipynb
+ create mode 100644 Module 1/buoi1/Lab1.1/Screenshot 2024-04-03 210034
+ create mode 100644 Module 1/buoi1/Lab1.2/Screenshot 2024-04-03 210855
+ create mode 100644 Module 1/buoi1/Lab1.2/Screenshot 2024-04-03 212042
+ create mode 100644 Module 1/buoi1/My_Notebook.ipynb
+ create mode 160000 Module 1/buoi1/lab1.3
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Bai-_tap (main)
+$ git push
+Enumerating objects: 16, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (15/15), 3.12 MiB | 1.68 MiB/s, done.
+Total 15 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/phuonghard/Bai-_tap.git
+   473b2b6..9cda08d  main -> main
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Bai-_tap (main)
+$ git checkout
+Your branch is up to date with 'origin/main'.
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Bai-_tap (main)
+$ git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Bai-_tap (main)
+$ git merge Bai-_tap
+merge: Bai-_tap - not something we can merge
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Bai-_tap (main)
+$ git push
+Everything up-to-date
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Bai-_tap (main)
+$ cd ..
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A
+$ cd ..
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP
+$ cd ..
+
+phuon@Phuonghard MINGW64 ~/downloads
+$ cd..
+bash: cd..: command not found
+
+phuon@Phuonghard MINGW64 ~/downloads
+$ cd..
+bash: cd..: command not found
+
+phuon@Phuonghard MINGW64 ~/downloads
+$ cd desktop
+bash: cd: desktop: No such file or directory
+
+phuon@Phuonghard MINGW64 ~/downloads
+$ cd Desktop
+bash: cd: Desktop: No such file or directory
+
+phuon@Phuonghard MINGW64 ~/downloads
+$ cd ..
+
+phuon@Phuonghard MINGW64 ~
+$ cd Desktop/
+bash: cd: Desktop/: No such file or directory
+
+phuon@Phuonghard MINGW64 ~
+$ cd Desktop
+bash: cd: Desktop: No such file or directory
+
+phuon@Phuonghard MINGW64 ~
+$ cd desktop
+bash: cd: desktop: No such file or directory
+
+phuon@Phuonghard MINGW64 ~
+$ cd desktop/
+bash: cd: desktop/: No such file or directory
+
+phuon@Phuonghard MINGW64 ~
+$ git clone https://github.com/phuonghard/Bai-_tap.git
+Cloning into 'Bai-_tap'...
+remote: Enumerating objects: 18, done.
+remote: Counting objects: 100% (18/18), done.
+remote: Compressing objects: 100% (12/12), done.
+remote: Total 18 (delta 1), reused 15 (delta 1), pack-reused 0
+Receiving objects: 100% (18/18), 3.12 MiB | 3.37 MiB/s, done.
+Resolving deltas: 100% (1/1), done.
+
+phuon@Phuonghard MINGW64 ~
+$ cd Bai-_tap
+
+phuon@Phuonghard MINGW64 ~/Bai-_tap (main)
+$ git branch -a
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+
+phuon@Phuonghard MINGW64 ~/Bai-_tap (main)
+$ cd..
+bash: cd..: command not found
+
+phuon@Phuonghard MINGW64 ~/Bai-_tap (main)
+$ cd ..
+
+phuon@Phuonghard MINGW64 ~
+$ cd downloads
+
+phuon@Phuonghard MINGW64 ~/downloads
+$ git clone https://github.com/phuonghard/Bai-_tap.git
+Cloning into 'Bai-_tap'...
+remote: Enumerating objects: 18, done.
+remote: Counting objects: 100% (18/18), done.
+remote: Compressing objects: 100% (12/12), done.
+remote: Total 18 (delta 1), reused 15 (delta 1), pack-reused 0
+Receiving objects: 100% (18/18), 3.12 MiB | 750.00 KiB/s, done.
+Resolving deltas: 100% (1/1), done.
+
+phuon@Phuonghard MINGW64 ~/downloads
+$ cd Bai-_tap
+
+phuon@Phuonghard MINGW64 ~/downloads/Bai-_tap (main)
+$ git branch -a
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+
+phuon@Phuonghard MINGW64 ~/downloads/Bai-_tap (main)
+$ git clone https://github.com/phuonghard/Bai-_tap.git
+Cloning into 'Bai-_tap'...
+remote: Enumerating objects: 18, done.
+remote: Counting objects: 100% (18/18), done.
+remote: Compressing objects: 100% (12/12), done.
+remote: Total 18 (delta 1), reused 15 (delta 1), pack-reused 0
+Receiving objects: 100% (18/18), 3.12 MiB | 7.14 MiB/s, done.
+Resolving deltas: 100% (1/1), done.
+
+phuon@Phuonghard MINGW64 ~/downloads/Bai-_tap (main)
+$ cd ..
+
+phuon@Phuonghard MINGW64 ~/downloads
+$ cd AIO-WARNUP
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP
+$ cd A
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A
+$ git clone https://github.com/phuonghard/Baitap.git
+Cloning into 'Baitap'...
+remote: Enumerating objects: 18, done.
+remote: Counting objects: 100% (18/18), done.
+remote: Compressing objects: 100% (12/12), done.
+remote: Total 18 (delta 1), reused 15 (delta 1), pack-reused 0
+Receiving objects: 100% (18/18), 3.12 MiB | 1.76 MiB/s, done.
+Resolving deltas: 100% (1/1), done.
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A
+$ git branch -a
+fatal: not a git repository (or any of the parent directories): .git
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A
+$ cd Baitap
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Baitap (main)
+$ git branch -a
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/hehe
+  remotes/origin/main
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Baitap (main)
+$ git checkout hehe
+Switched to a new branch 'hehe'
+branch 'hehe' set up to track 'origin/hehe'.
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Baitap (hehe)
+$ cd ..
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A
+$ cd Baitap
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Baitap (hehe)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Baitap (main)
+$ git add .
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Baitap (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Baitap (main)
+$ git commit "ngon"
+error: pathspec 'ngon' did not match any file(s) known to git
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Baitap (main)
+$ git commit -m "hehe"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Baitap (main)
+$ git púh
+git: 'púh' is not a git command. See 'git --help'.
+
+The most similar command is
+        push
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Baitap (main)
+$ git push
+Everything up-to-date
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Baitap (main)
+$ git merge
+Already up to date.
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Baitap (main)
+$ git checkout hehe
+Switched to branch 'hehe'
+Your branch is up to date with 'origin/hehe'.
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Baitap (hehe)
+$ git add .
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Baitap (hehe)
+$ git status
+On branch hehe
+Your branch is up to date with 'origin/hehe'.
+
+nothing to commit, working tree clean
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Baitap (hehe)
+$ git add .
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Baitap (hehe)
+$ git status
+On branch hehe
+Your branch is up to date with 'origin/hehe'.
+
+nothing to commit, working tree clean
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Baitap (hehe)
+$ git branch -a
+* hehe
+  main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/hehe
+  remotes/origin/main
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Baitap (hehe)
+$ git checkout hehe
+Already on 'hehe'
+Your branch is up to date with 'origin/hehe'.
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Baitap (hehe)
+$ git add .
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Baitap (hehe)
+$ git status
+On branch hehe
+Your branch is up to date with 'origin/hehe'.
+
+nothing to commit, working tree clean
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Baitap (hehe)
+$ git add .
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Baitap (hehe)
+$ git status
+On branch hehe
+Your branch is up to date with 'origin/hehe'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Module 1/buoi1/Lab2/ngon.txt
+
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Baitap (hehe)
+$ git commit -m "hehe"
+[hehe 7bee744] hehe
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Module 1/buoi1/Lab2/ngon.txt
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Baitap (hehe)
+$ git push
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (6/6), 426 bytes | 426.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/phuonghard/Baitap.git
+   9cda08d..7bee744  hehe -> hehe
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Baitap (hehe)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Baitap (main)
+$ git merge hehe
+Updating 9cda08d..7bee744
+Fast-forward
+ Module 1/buoi1/Lab2/ngon.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Module 1/buoi1/Lab2/ngon.txt
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Baitap (main)
+$ git push
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/phuonghard/Baitap.git
+   9cda08d..7bee744  main -> main
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Baitap (main)
+$ git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Baitap (main)
+$ git pull
+Already up to date.
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Baitap (main)
+$ git push
+Everything up-to-date
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Baitap (main)
+$ ^C
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Baitap (main)
+$ git clone https://github.com/phuonghard/no_repo.git
+Cloning into 'no_repo'...
+warning: You appear to have cloned an empty repository.
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Baitap (main)
+$ cd ..
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A
+$ mkdir norepo
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A
+$ cd norepo
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/norepo
+$ echo "# norepo" >>README.md
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/norepo
+$ git init
+Initialized empty Git repository in C:/Users/phuon/Downloads/AIO-WARNUP/A/norepo/.git/
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/norepo (master)
+$ git add README.md
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/norepo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.md
+
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/norepo (master)
+$ git clone https://github.com/phuonghard/no_repo.git
+Cloning into 'no_repo'...
+warning: You appear to have cloned an empty repository.
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/norepo (master)
+$ echo "#norepo
+>
+> "
+#norepo
+
+
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/norepo (master)
+$ echo "# norepo" >> README.md
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/norepo (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/phuon/Downloads/AIO-WARNUP/A/norepo/.git/
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/norepo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.md
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        no_repo/
+
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/norepo (master)
+$ git commit -m
+error: switch `m' requires a value
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/norepo (master)
+$ git commit -m "ngon"
+[master (root-commit) 7630ceb] ngon
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/norepo (master)
+$ git remote add origin https://github.com/phuonghard/no_repo.git
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/norepo (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 212 bytes | 212.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/phuonghard/no_repo.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/norepo (master)
+$ ^C
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/norepo (master)
+$ ^C
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/norepo (master)
+$ ^C
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/norepo (master)
+$ cd ..
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A
+$ git clone https://github.com/romeokienzler/TensorFlow.git
+Cloning into 'TensorFlow'...
+remote: Enumerating objects: 131, done.
+Receiving objects:  75% (99/131)remote: Total 131 (delta 0), reused 0 (delta 0), pack-reused 131
+Receiving objects: 100% (131/131), 206.34 KiB | 577.00 KiB/s, done.
+Resolving deltas: 100% (56/56), done.
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A
+$ cd Baitap
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Baitap (main)
+$ git clone ^[[200~https://github.com/romeokienzler/TensorFlow.git~
+Cloning into 'TensorFlow.git~'...
+fatal: protocol '?[200~https' is not supported
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Baitap (main)
+$ git clone https://github.com/romeokienzler/TensorFlow.git
+Cloning into 'TensorFlow'...
+remote: Enumerating objects: 131, done.
+remote: Total 131 (delta 0), reused 0 (delta 0), pack-reused 131
+Receiving objects: 100% (131/131), 206.34 KiB | 299.00 KiB/s, done.
+Resolving deltas: 100% (56/56), done.
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Baitap (main)
+$ git add .
+warning: adding embedded git repository: TensorFlow
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> TensorFlow
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached TensorFlow
+hint:
+hint: See "git help submodule" for more information.
+error: 'no_repo/' does not have a commit checked out
+fatal: adding files failed
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Baitap (main)
+$ git commit -m "hehe"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Module 1/buoi1/Lab1.2/code.txt
+        TensorFlow/
+        no_repo/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Baitap (main)
+$ git push
+Everything up-to-date
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Baitap (main)
+$ git submodule add https://github.com/romeokienzler/TensorFlow.git TensorFlow
+Adding existing repo at 'TensorFlow' to the index
+warning: in the working copy of '.gitmodules', LF will be replaced by CRLF the next time Git touches it
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Baitap (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitmodules
+        new file:   TensorFlow
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   TensorFlow (modified content)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Module 1/buoi1/Lab1.2/code.txt
+        no_repo/
+
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Baitap (main)
+$ git commit -m "hu:
+> '
+> "
+[main 6dd5fcc] hu: '
+ 2 files changed, 4 insertions(+)
+ create mode 100644 .gitmodules
+ create mode 160000 TensorFlow
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Baitap (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 418 bytes | 418.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/phuonghard/Baitap.git
+   7bee744..6dd5fcc  main -> main
+
+phuon@Phuonghard MINGW64 ~/downloads/AIO-WARNUP/A/Baitap (main)
+$
