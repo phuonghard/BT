@@ -12,21 +12,24 @@ def write_class(NC):
     #direction
     #DNC = directionary of file
     DNC = r"C:\Users\phuon\Downloads\AIO-WARNUP\A\BT\Module1\buoi5\baitaptongket\data-files\Data Files"
-    #this is
+    #this is 
     with open(DNC + "\\" + NC, "r+") as NCT:
-        #split data of the file to the list by \n
-        NCT = NCT.read().split("\n")
-        #FN = file name
-        print("Read file:", FN)
+        NCT1=NCT.read().split("\n")
+        NCT.read()
+        print("Read file:",FN)
+
         total_line = 0
         total_fail_line = 0
         good_line = 0
         print("---Analyze---")
-        #task2
-        for line in NCT:
+
+        for line in NCT1:
+
+
             PC = line.split(",")
             PC[-1] = PC[-1].replace("\n", "")
-            #good case
+            # print(re.findall(r"\AN\d{8}", PC[0]), line)
+
             if re.findall(r"\AN\d{8}$", PC[0]) and len(PC) == 26:
                 good_line += 1
             elif re.findall(r"\AN\d{8}$", PC[0]) and len(PC) != 26:
@@ -38,17 +41,22 @@ def write_class(NC):
             else:
                 total_fail_line += 1
                 print("Invalid line of data: the N# + the length is invalid\n", PC)
+
+            # print(NCT1.readline().split(",")[0])
             total_line += 1
+
         if total_fail_line == 0:
             print("No error found")
         print("---Report---")
         print("Total valid line of data:", total_line)
         print("Total fail line of data:", total_fail_line, "\n")
+
     #print(NC)
     return NC
 FNC = 0
 while(FNC!="end"):
     FNC = input("Your class is:")
+
     try:
         if FNC == "allclass":
 
@@ -57,6 +65,7 @@ while(FNC!="end"):
                 FNCT = "class" + str(i) + ".txt"
                 FN = FNCT
                 write_class(FNCT)
+
         else:
             FN = FNC
             write_class(FNC+".txt")
